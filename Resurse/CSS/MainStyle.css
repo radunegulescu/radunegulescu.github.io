@@ -1,9 +1,15 @@
 ﻿body {
+    background-image: url('C:/Radu/HTML/Proiect TW/Resurse/Imagini/bg2.jpg');
+    font-weight: bold;
+    color: firebrick;
+}
+p{
     background-color: lightblue;
 }
-h1,h2,h3,h4,h5,h6{
-    font-size:50px;
+h1, h2, h3, h4, h5, h6 {
+    font-size: 50px;
 }
+
 #ImgPrinc {
     display: block;
     margin-left: auto;
@@ -11,12 +17,15 @@ h1,h2,h3,h4,h5,h6{
     width: 40%;
     padding: 20px;
 }
-.center{
-    text-align:center;
+
+.center {
+    text-align: center;
 }
+
 figcaption {
     font-size: 40px;
 }
+
 nav {
     width: 100%;
     position: fixed;
@@ -26,8 +35,8 @@ ul.menu > li, ul.menu > li > ul.submenu > li {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
-    height: 1.2rem;
-    line-height: 1.2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
     text-align: center;
     list-style-type: none;
     overflow: hidden;
@@ -63,17 +72,24 @@ ul.menu > li > ul.submenu {
     position: relative;
     top: 0px;
 }
+
 ul.menu > li > a:hover, ul.submenu > li > a:hover {
     background: green;
 }
+
 ul.menu > li:hover {
     overflow: visible;
 }
-ul.menu{
-    padding:0px;
+
+ul.menu {
+    padding: 0px;
 }
+
 .img {
     height: 200px;
     width: 200px;
     background-color: lightblue;
+}
+p{
+    font-size: 20px;
 }

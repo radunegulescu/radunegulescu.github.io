@@ -11,3 +11,26 @@ table {
     border-collapse: collapse;
     empty-cells: show;
 }
+#Istorie{
+    display:flex;
+    flex-direction: column;
+}
+#Istorie article{
+    border:5px solid red;
+}
+#Istorie article p{
+    padding: 15px;
+}
+#bg {
+    opacity: 0.8;
+}
+#Recorduri>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#Recorduri > div >table{
+    flex-basis: 800px;
+    height: 500px;
+    text-align:center;
+}
