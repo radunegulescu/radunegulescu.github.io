@@ -1,15 +1,24 @@
 ﻿body {
-    background-image: url('../Imagini/bg2.jpg');
+    background-image: url('../Imagini/bg3.jpg');
     font-weight: bold;
-    color: firebrick;
+    color: black;
 }
-p{
-    background-color: lightblue;
+p, li{
+    background-color: yellowgreen;
+}
+aside{
+    background-color:yellowgreen;
 }
 h1, h2, h3, h4, h5, h6 {
     font-size: 50px;
 }
-
+#Logo {
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 #ImgPrinc {
     display: block;
     margin-left: auto;
@@ -26,6 +35,7 @@ figcaption {
     font-size: 40px;
 }
 nav {
+    left: 30px;
     top: 0px;
     width: 100%;
     position: fixed;
@@ -38,8 +48,8 @@ ul.menu > li, ul.menu > li > ul.submenu > li {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
-    height: 1.5rem;
-    line-height: 1.5rem;
+    height: 3rem;
+    line-height: 3rem;
     text-align: center;
     list-style-type: none;
     overflow: hidden;
@@ -47,7 +57,7 @@ ul.menu > li, ul.menu > li > ul.submenu > li {
 
 ul.menu > li {
     float: left;
-    width: 20%;
+    width: 16%;
 }
 
 ul.submenu > li {
@@ -61,15 +71,15 @@ ul.submenu > li {
         color: black;
     }
 
-ul.menu > li:nth-of-type(even) a, ul.menu > li:nth-of-type(even) div {
-    background-color: lightcoral;
-    transition: background 2s linear;
-}
+    ul.menu > li:nth-of-type(even) a, ul.menu > li:nth-of-type(even) div {
+        background-color: #3b3a30;
+        transition: background 2s linear;
+    }
 
-ul.menu > li:nth-of-type(odd) a, ul.menu > li:nth-of-type(odd) div {
-    background: yellow;
-    transition: background 2s linear;
-}
+    ul.menu > li:nth-of-type(odd) a, ul.menu > li:nth-of-type(odd) div {
+        background: #b2c2bf;
+        transition: background 2s linear;
+    }
 
 ul.menu > li > ul.submenu {
     position: relative;
@@ -90,9 +100,26 @@ ul.menu {
 
 .img {
     height: 200px;
-    width: 200px;
-    background-color: lightblue;
+    width: 300px;
+    padding-left:550px;
 }
 p{
     font-size: 20px;
+}
+h1 {
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 55px;
+}
+nav {
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+p {
+    font-family: 'Crimson Text', Georgia, Times, serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 30px;
 }
