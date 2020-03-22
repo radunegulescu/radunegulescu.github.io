@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: url('C:/Radu/HTML/Proiect TW/Resurse/Imagini/bg2.jpg');
+    background-image: url('../Imagini/bg2.jpg');
     font-weight: bold;
     color: firebrick;
 }
