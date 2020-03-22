@@ -25,12 +25,15 @@ h1, h2, h3, h4, h5, h6 {
 figcaption {
     font-size: 40px;
 }
-
 nav {
+    top: 0px;
     width: 100%;
     position: fixed;
 }
-
+ul.menu, ul.submenu, body{
+    padding: 0px;
+    margin: 0px;
+}
 ul.menu > li, ul.menu > li > ul.submenu > li {
     display: block;
     font-size: 1.2rem;
