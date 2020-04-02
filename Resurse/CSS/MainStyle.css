@@ -37,7 +37,7 @@ nav {
     margin-right: auto;
     top: 0px;
     width: 100%;
-    position: fixed;
+    position: sticky;
 }
 ul.menu, ul.submenu, body{
     padding: 0px;
