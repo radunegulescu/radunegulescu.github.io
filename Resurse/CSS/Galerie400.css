@@ -1,0 +1,9 @@
+﻿#galerie-animata{
+    display:none;
+}
+#gr {
+    display:block;
+}
+#gr img{
+    width:100%;
+}

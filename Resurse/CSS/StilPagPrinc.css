@@ -1,17 +1,28 @@
-﻿th, td {
-    border: 1px solid black;
-    padding: 5px;
+﻿
+#gr{
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5px;
+}
+#gr table{
+    grid-area:1/1/2/2;
+}
+#gr img{
+    grid-area:1/2/2/3;
 }
 
-    td:empty {
-        padding: 20px;
-    }
+
+th, td {
+    border: 1px solid black;
+}
 
 table {
     border-collapse: collapse;
     empty-cells: show;
-    font-size: 50px;
+    font-size: 2rem;
 }
+
 #Istorie{
     display:flex;
     flex-direction: column;
@@ -25,13 +36,35 @@ table {
 #bg {
     opacity: 0.8;
 }
-#Recorduri>div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+#minge{
+    width:10%;
 }
-#Recorduri > div >table{
-    flex-basis: 800px;
-    height: 500px;
-    text-align:center;
+@media screen and (max-width:1293px) {
+    #gr img {
+        grid-area: 2/1/2/3;
+        width:70%;
+    }
+}
+@media screen and (max-width:700px){
+    thead{
+        display:none;
+    }
+    table,tr,td{
+        display:block;
+        font-size:30px;
+    }
+    tr{
+        padding:20px;
+    }
+    td:nth-child(1)::before {
+        content: "Record: ";
+    }
+
+        td:nth-child(2)::before {
+            content: "Nume: ";
+        }
+
+    td:nth-child(3)::before {
+        content: "Cantitate: ";
+    }
 }

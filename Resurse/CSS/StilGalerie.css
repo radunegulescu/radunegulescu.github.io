@@ -1,1 +1,94 @@
-﻿
+﻿#gr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 0.5em;
+    grid-column-gap: 0.5em;
+}
+    #gr figure {
+        width: 80%;
+        height: 80%;
+        position: relative;
+    }
+    #gr img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #gr figcaption {
+        text-align: center;
+        background-color: rgba(255,0,0,0.6);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #gr > figure:nth-child(5) {
+        grid-area: 2/3/3/4;
+    }
+
+    #gr > figure:nth-child(6) {
+        grid-area: 3/1/4/2;
+    }
+
+    #gr > figure:nth-child(7) {
+        grid-area: 3/3/4/4;
+    }
+    #gr figure:hover {
+        box-shadow: red 10px 10px 20px;
+    }
+
+    #gr figure {
+        transition: all 0.5s linear;
+    }
+#container_animatie {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    width: 900px;
+    height: 500px;
+    box-sizing: content-box;
+}
+
+#derulant {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    animation-name: go;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+
+    #derulant > * {
+        flex-shrink: 0;
+        position: relative;
+    }
+
+#container_animatie figure:hover figcaption {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 1.5em;
+    background: rgba(200,200,200,0.5);
+    text-align: center;
+}
+
+#container_animatie * {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes go {
+    0% {
+        left: 0px;
+    }
+
+    100% {
+        left: -660%;
+    }
+}

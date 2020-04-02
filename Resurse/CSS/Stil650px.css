@@ -1,0 +1,9 @@
+﻿thead
+{display:none;
+}
+tr, td{
+    display: block;
+}
+#gr img {
+    grid-area: 2/1/2/2;
+}

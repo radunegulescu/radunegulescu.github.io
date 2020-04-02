@@ -1,0 +1,19 @@
+﻿#gr {
+    grid-template-columns: repeat(2,1fr);
+}
+
+    #gr > figure:nth-child(5) {
+        grid-area: auto;
+    }
+
+    #gr > figure:nth-child(6) {
+        grid-area: auto;
+    }
+
+    #gr > figure:nth-child(7) {
+        grid-area: auto;
+    }
+#container_animatie {
+    width: 350px;
+    height: 256px;
+}
